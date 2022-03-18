@@ -6,13 +6,13 @@ We'll be using the pandas (short for panels of data) module to analyze a large d
 1. The conventional way to import the pandas module is below. Note that the "as pd" part is optional (but widely used). You may want to run your code after importing pandas to let replit install it.
 import pandas as pd
 """
-
+import panda as pd
 
 """
 2. This folder contains a large .csv (spreadsheet) file named ign.csv. Import the data stored in the csv as a dataframe to Python and store it in a variable. The indices should be the names of the games, not the integers starting from 0 (you'll have to look at the .csv file to see which column the game titles are.)
 <variable> = pd.read_csv('<filename/url>', index_col = <column number>)
 """
-
+data = pd.read_csv('ign.csv')
 
 """
 3. Recall how you can index dataframe columns by their column name. For example, reviews['release_year'] would return a dataframe containing only the index (game title) and the year that game was released.
